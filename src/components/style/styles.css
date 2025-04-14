@@ -1,0 +1,99 @@
+body{
+    font-family: arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    justify-content: center;
+}
+main{
+    max-width: 1200px;  
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+.tour-card{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.2s;
+    display: flex;
+    width: 400px;
+    overflow: hidden;
+    min-height: 400px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tour-img{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    height: 50%;
+}
+.tour-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: .5rem;
+}
+.tour-header h2{
+    font-size: 1.5rem;
+    margin: 0;
+    color:white;
+    text-align: center;}
+    
+    .tour-price{
+        font-size: 1.2rem;
+        color: #333;
+        margin: 0;
+        text-align: center;
+    }
+    .read-more{
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .not-interested:hover{
+        background-color: #0056b3;
+    };
+    .no-tours {
+        font-size: 1.5rem;
+        color: #333;
+        margin: 20px 0;
+        text-align: center;
+    }
+    @media (max-width: 768px) {
+        .tour-card {
+            width: calc(50% - 40px);
+        }
+    }
+    @media (max-width: 480px) {
+        .tour-card {
+            width: calc(100% - 40px);
+        }
+    }
+    .tour-card:hover {
+        transform: scale(1.05);
+    }
